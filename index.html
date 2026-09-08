@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ══ NAV ══ -->
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24" fill="white"><path d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+        </div>
+        <span class="nav-logo-text">ORIZON</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#home">Início</a>
+        <a href="#features">Recursos</a>
+        <a href="#how">Como Funciona</a>
+        <a href="#pricing">Preço</a>
+      </div>
+
+      <!-- NOVOS BOTÕES NO DESKTOP -->
+      <div class="nav-actions" style="gap: 8px;">
+        <a href="#" class="btn btn-primary" style="padding: 8px 14px; font-size: 12px;">Conheça o Sistema</a>
+        <a href="#" class="btn btn-primary" style="padding: 8px 14px; font-size: 12px;">Baixar App (APK)</a>
+        <a href="#" class="btn btn-ghost" style="padding: 8px 14px; font-size: 12px;">Assistir Vídeo</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- NOVOS BOTÕES NO MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Início</a>
+      <a href="#features">Recursos</a>
+      <a href="#how">Como Funciona</a>
+      <a href="#pricing">Preço</a>
+      <a href="#" class="btn btn-primary" style="text-align:center; margin-top:8px;">Conheça o Sistema</a>
+      <a href="#" class="btn btn-primary" style="text-align:center; margin-top:6px;">Baixar App (APK)</a>
+      <a href="#" class="btn btn-ghost" style="text-align:center; margin-top:6px;">Assistir Vídeo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-content">
+      <h1>Movemos mais que cargas<br><span>Movemos resultados.</span></h1>
+      <p class="hero-sub">Orizon é um sistema para automação e gerenciamento de frotas e escalas de viagens e motoristas.</p>
+    </div>
+  </div>
+</section> <!-- SEÇÃO HERO FECHADA AQUI -->
+
+   
+    
+
+<!-- ══ RECURSOS DO SISTEMA ══ -->
+<section class="features" id="features">
+  <div class="container">
+    
+    <!-- DIV 1: Cabeçalho da Seção -->
+    <div class="features-header">
+      <div class="tag">Plataforma Orizon</div>
+      <h2 class="section-title">
+        Tudo o que sua frota precisa.<br>
+        <span class="dim">Com controle total e precisão.</span>
+      </h2>
+    </div>
+
+    <!-- DIV 2: Grid de Cards dos Recursos -->
+    <div class="features-grid">
+
+      <!-- Visão Geral da Frota -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+        </div>
+        <div class="feature-title">Gestão de Veículos e Manutenção</div>
+        <div class="feature-desc">Acompanhe a frota em tempo real. Monitore o odômetro para automatizar revisões preventivas e reduzir custos de manutenção corretiva.</div>
+        <div class="feature-tags">
+          <span class="feature-tag">Leitura de Odômetro</span>
+          <span class="feature-tag">Manutenção Preventiva</span>
+          <span class="feature-tag">Status da Frota</span>
+        </div>
+      </div>
+
+      <!-- Gestão de Viagens -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.159.69.159 1.006 0z"/></svg>
+        </div>
+        <div class="feature-title">Escalas e Rastreamento</div>
+        <div class="feature-desc">Elimine erros manuais na montagem de escalas entre veículos e motoristas. Acompanhe rotas, prazos de entrega e horários previstos.</div>
+        <div class="feature-tags">
+          <span class="feature-tag">Escalas Automáticas</span>
+          <span class="feature-tag">Mapeamento de Rotas</span>
+          <span class="feature-tag">Gestão de Cargas</span>
+        </div>
+      </div>
+
+      <!-- Gestão de Motoristas -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+        </div>
+        <div class="feature-title">Controle de Motoristas</div>
+        <div class="feature-desc">Gerencie a escala de trabalho, a atribuição de rotas e o desempenho individual de cada motorista através do aplicativo mobile dedicado.</div>
+        <div class="feature-tags">
+          <span class="feature-tag">App Mobile (Expo)</span>
+          <span class="feature-tag">Desempenho</span>
+          <span class="feature-tag">Jornada de Trabalho</span>
+        </div>
+      </div>
+
+      <!-- Análises financeiras (CPK) -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+        </div>
+        <div class="feature-title">Controle Financeiro e CPK</div>
+        <div class="feature-desc">Calcule automaticamente o Custo por Quilômetro (CPK) integrando despesas com combustível para saber a rentabilidade de cada viagem.</div>
+        <div class="feature-tags">
+          <span class="feature-tag">Cálculo de CPK</span>
+          <span class="feature-tag">Combustível</span>
+          <span class="feature-tag">Dashboards</span>
+        </div>
+      </div>
+
+      <!-- Comprovação Segura (e-POD) -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
+        </div>
+        <div class="feature-title">Comprovação Digital (e-POD)</div>
+        <div class="feature-desc">Garanta segurança jurídica com assinaturas digitais, fotos e coordenadas de geolocalização protegidas por hash de segurança no envio.</div>
+        <div class="feature-tags">
+          <span class="feature-tag">Assinatura Digital</span>
+          <span class="feature-tag">Geolocalização</span>
+          <span class="feature-tag">Hash de Segurança</span>
+        </div>
+      </div>
+
+      <!-- Tecnologia e Integração -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z"/></svg>
+        </div>
+        <div class="feature-title">Arquitetura de Alta Performance</div>
+        <div class="feature-desc">Construído em Laravel, React Native e PostgreSQL. Comunicação em tempo real entre o app móvel e o banco de dados centralizado.</div>
+        <div class="feature-tags">
+          <span class="feature-tag">API REST Laravel</span>
+          <span class="feature-tag">PostgreSQL</span>
+          <span class="feature-tag">React Native</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Seção de Features fecha AQUI -->
+</section>
+
+<!-- Seção do CTA abre FORA das features -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Pronto para transformar a gestão da sua frota?</h2>
+    <p>Acesse a plataforma web, instale o app do motorista ou veja a demonstração completa em vídeo.</p>
+    
+    <div class="cta-actions">
+      <a href="#" class="btn btn-primary">Conheça o Sistema</a>
+      <a href="#" class="btn btn-primary">Baixar o App (APK)</a>
+      <a href="#" class="btn btn-ghost">Assistir Vídeo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ══ -->
+<section class="how" id="how">
+  <div class="container">
+    <span class="tag">Passo a Passo</span>
+    <h2 class="section-title">Como Funciona a Plataforma</h2>
+    
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <h3 class="step-title">Cadastre sua Frota</h3>
+        <p class="step-desc">Insira os veículos, motoristas e rotas iniciais no painel de controle em poucos minutos.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <h3 class="step-title">Conecte o App do Motorista</h3>
+        <p class="step-desc">O motorista baixa o APK, realiza a comprovação digital (e-POD) e atualiza os custos de viagem.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <h3 class="step-title">Analise o CPK e Lucros</h3>
+        <p class="step-desc">Acompanhe métricas de custo por quilômetro e rentabilidade em tempo real pelos dashboards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRICING ══ -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="pricing-header">
+      <div class="tag" style="justify-content:center">Pricing</div>
+      <h2 class="section-title" style="text-align:center">Planos de Assinatura.</h2>
+      <!--<p class="pricing-sub">14-day free trial on all plans. No credit card required.</p> -->
+    </div>
+    <div class="pricing-grid">
+
+      <div class="plan-card">
+        <div class="plan-top">
+          <div class="plan-name">Starter</div>
+          <div class="plan-desc">For small fleets getting started with telematics.</div>
+          <div class="plan-price">
+            <span class="plan-amount">$0</span>
+            <span class="plan-period">/mês</span>
+          </div>
+          <!--<div class="plan-limit">Up to 25 vehicles</div>-->
+        </div>
+        <div class="plan-body">
+          <ul class="plan-features">
+            <li><svg fill="#3b82f6" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="#3b82f6" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="#3b82f6" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="#3b82f6" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="#3b82f6" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+          </ul>
+          <button class="plan-cta primary">Assinar</button>
+        </div>
+      </div>
+
+      <div class="plan-card highlight">
+        <div class="plan-top">
+          <!--<div class="plan-popular">Most Popular</div>-->
+          <div class="plan-name">Professional</div>
+          <div class="plan-desc">The full platform for growing operations.</div>
+          <div class="plan-price">
+            <span class="plan-amount">$0</span>
+            <span class="plan-period">/mês</span>
+          </div>
+          <!--<div class="plan-limit">Up to 150 vehicles</div>-->
+        </div>
+        <div class="plan-body">
+          <ul class="plan-features">
+            <li><svg fill="white" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="white" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="white" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="white" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="white" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="white" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+          </ul>
+          <button class="plan-cta white">Assinar</button>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-top">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-desc">For large fleets with custom requirements.</div>
+          <div class="plan-price">
+            <span class="plan-amount">$0</span>
+          </div>
+          <!--<div class="plan-limit">Unlimited vehicles</div>-->
+        </div>
+        <div class="plan-body">
+          <ul class="plan-features">
+            <li><svg fill="#3b82f6" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="#3b82f6" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="#3b82f6" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="#3b82f6" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="#3b82f6" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+            <li><svg fill="#3b82f6" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>##################</li>
+          </ul>
+          <button class="plan-cta primary">Assinar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ══ -->
+<!--<section class="cta-banner">
+  <div class="container">
+    <h2>Ready to take control of your fleet?</h2>
+    <p>Join 840+ companies already running smarter operations with FleetView.</p>
+    <div class="cta-actions">
+      <a href="#" class="btn btn-white">Start Free Trial</a>
+      <a href="#" class="btn btn-outline-white">Schedule a Demo</a>
+    </div>
+  </div>
+</section> -->
+
+    <!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-logo">
+          <div class="footer-logo-icon">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+          </div>
+          <span class="footer-logo-text">ORIZON</span>
+        </div>
+        <p class="footer-tagline">Inteligência de frotas em tempo real para equipes operacionais modernas.</p>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Produto</div>
+        <ul>
+          <li><a href="#">Recursos</a></li>
+          <li><a href="#">Planos e Preços</a></li>
+          <li><a href="#">Histórico de Atualizações</a></li>
+          <li><a href="#">A Caminho (Roadmap)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Empresa</div>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Imprensa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Jurídico</div>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Segurança</a></li>
+          <li><a href="#">LGPD</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 ORIZON. Todos os direitos reservados.</span>
+      <span>Desenvolvido com precisão no Brasil 🇧🇷</span>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
