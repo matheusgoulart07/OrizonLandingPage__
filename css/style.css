@@ -121,6 +121,63 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-outline-white:hover { border-color: var(--branco); }
 
+/* Botão do Instagram no Cabeçalho */
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(248, 250, 252, 0.06);
+  border: 1px solid rgba(248, 250, 252, 0.12);
+  color: var(--branco);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.btn-instagram svg {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-instagram:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  border-color: transparent;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 39, 67, 0.3);
+}
+
+/* ── SEÇÃO DE VÍDEO (DEMO) ── */
+.demo-section {
+  padding: 40px 0;
+  background: var(--azul-marinho);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+  height: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* ── NAV ── */
 nav {
   position: fixed; 
@@ -128,70 +185,70 @@ nav {
   left: 0; 
   right: 0; 
   z-index: 100;
-  background: rgba(15,23,42,.92); 
+  background: rgba(15, 23, 42, 0.92); 
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(248,250,252,.06);
+  border-bottom: 1px solid rgba(248, 250, 252, 0.06);
+}
+
+/* 1. Usamos max-width maior na nav para espalhar os elementos até as pontas */
+nav .container {
+  max-width: 1400px; /* Aumentado de 1200px para 1400px */
+  padding: 0 32px;
 }
 
 .nav-inner {
   display: flex; 
   align-items: center; 
   justify-content: space-between;
-  height: 64px;
+  height: 84px; /* Altura confortável para o cabeçalho */
 }
 
-.nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.nav-logo-icon {
-  width: 32px; 
-  height: 32px; 
-  border-radius: 8px; 
-  background: var(--azul);
+/* 2. Logo sem transform gambiarra e com tamanho equilibrado */
+.nav-logo { 
   display: flex; 
   align-items: center; 
-  justify-content: center; 
+  text-decoration: none; 
   flex-shrink: 0;
 }
-.nav-logo-icon svg { width: 16px; height: 16px; }
-.nav-logo-text {
-  font-family: var(--font-family-display); 
-  font-weight: 800; 
-  font-size: 18px; 
-  color: var(--branco);
+
+.nav-logo-img {
+  height: 140px; /* Tamanho nítido e bem dimensionado */
+  width: auto; 
+  display: block;
+  object-fit: contain;
 }
 
-.nav-links { display: flex; align-items: center; gap: 36px; }
+/* 3. Espaçamento dos links do menu central */
+.nav-links { 
+  display: flex; 
+  align-items: center; 
+  gap: 28px; /* Reduzido de 36px para não pressionar a barra */
+}
+
 .nav-links a {
   font-size: 14px; 
   font-weight: 500; 
-  color: rgba(248,250,252,.55);
+  color: rgba(248, 250, 252, 0.65);
   text-decoration: none; 
-  transition: color .2s;
+  transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--branco); }
 
+/* 4. Ações e botões mais enxutos */
 .nav-actions { 
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
-/* Garante tamanho proporcional para os botões do topo */
+/* Ajuste específico para os botões do cabeçalho ficarem compactos */
 .nav-actions .btn {
   white-space: nowrap;
+  padding: 10px 18px; /* Reduz o padding excessivo dos botões no topo */
+  font-size: 13px;
+  border-radius: 10px;
 }
-
-.nav-signin {
-  font-size: 14px; 
-  font-weight: 500; 
-  color: rgba(248,250,252,.6);
-  background: none; 
-  border: none; 
-  cursor: pointer; 
-  font-family: var(--font-family-body);
-  transition: color .2s; 
-  padding: 8px 12px;
-}
-.nav-signin:hover { color: var(--branco); }
 
 .hamburger {
   display: none; 
@@ -327,7 +384,7 @@ nav {
 /* ── FEATURES ── */
 .features { 
   background: var(--azul-marinho); 
-  padding: 80px 0; 
+  padding: 20px 0; 
 }
 
 /* Container que limita a largura e cria o cartão arredondado */
@@ -799,8 +856,17 @@ footer {
 
 .footer-grid { display: grid; grid-template-columns: 1.6fr repeat(3, 1fr); gap: 48px; margin-bottom: 48px; }
 .footer-brand-logo { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
-.footer-logo-icon { width: 28px; height: 28px; border-radius: 7px; background: var(--azul); display: flex; align-items: center; justify-content: center; }
-.footer-logo-icon svg { width: 14px; height: 14px; }
+.footer-logo-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-logo-img {
+  height: 100px;       /* Um pouco mais compacto que a navbar para harmonizar com o rodapé */
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
 .footer-logo-text { font-family: var(--font-family-display); font-weight: 800; font-size: 16px; color: var(--branco); }
 .footer-tagline { font-size: 12px; line-height: 1.6; color: rgba(248,250,252,.35); max-width: 220px; }
 
