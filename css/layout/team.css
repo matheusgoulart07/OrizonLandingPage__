@@ -1,0 +1,103 @@
+.team {
+  background: var(--azul-marinho);
+  padding: 80px 0;
+}
+
+.team .container {
+  background: linear-gradient(145deg, #131c31 0%, #0d1527 100%);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  border-radius: 28px;
+  padding: 56px 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.team .tag { 
+  color: var(--ciano); 
+}
+
+.team .tag::before { 
+  background: var(--ciano); 
+  box-shadow: 0 0 8px var(--ciano);
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-card {
+  flex: 1 1 calc(25% - 24px);
+  min-width: 220px;
+  max-width: 260px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 28px 20px;
+  text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(34, 211, 238, 0.35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.team-avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(34, 211, 238, 0.4);
+  background: rgba(6, 182, 212, 0.12);
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.15);
+}
+
+.team-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-name {
+  font-family: var(--font-family-display);
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--branco);
+  margin-bottom: 6px;
+}
+
+.team-role {
+  font-size: 13px;
+  color: var(--ciano);
+  font-weight: 500;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .team .container {
+    padding: 36px 20px;
+  }
+
+  .team-card {
+    flex: 1 1 calc(50% - 16px);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-card {
+    flex: 1 1 100%;
+  }
+}

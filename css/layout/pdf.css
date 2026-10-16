@@ -1,0 +1,73 @@
+/* ── SEÇÃO DO MANUAL DE USO (PDF) ── */
+.manual-section {
+  background: var(--azul-marinho);
+  padding: 80px 0;
+}
+
+.manual-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.manual-sub {
+  font-size: 15px;
+  color: rgba(248, 250, 252, 0.65);
+  max-width: 540px;
+  margin: 12px auto 0 auto;
+  line-height: 1.6;
+}
+
+/* Moldura responsiva em Proporção 16:9 ou altura fixa confortável */
+.pdf-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: 700px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #0d1527;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 
+              0 0 20px rgba(34, 211, 238, 0.1);
+}
+
+.pdf-wrapper embed {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Link de fallback para Download em telas pequenas */
+.pdf-fallback {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: rgba(248, 250, 252, 0.5);
+}
+
+.pdf-fallback a {
+  display: inline-flex;
+  margin-left: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+/* Adaptação para dispositivos móveis */
+@media (max-width: 768px) {
+  .manual-section {
+    padding: 50px 0;
+  }
+
+  .pdf-wrapper {
+    height: 500px; /* Reduz a altura em telas menores */
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-wrapper {
+    height: 400px;
+  }
+}

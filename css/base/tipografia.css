@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
+  font-weight: 800;
+  color: var(--branco);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.section-title {
+  font-family: var(--font-family-display);
+  font-weight: 900;
+  font-size: clamp(1.85rem, 4.5vw, 3rem);
+  line-height: 1.15;
+  color: var(--branco);
+}
+
+.feature-title {
+  font-family: var(--font-family-display);
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--branco);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
